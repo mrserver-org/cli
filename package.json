@@ -1,5 +1,5 @@
 {
-   "name": "mrserver",
+   "name": "misterserver",
    "version": "1.0.0",
    "description": "Maximize your server.",
    "main": "src/cli.js",

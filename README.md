@@ -9,7 +9,7 @@ A powerful Command Line Interface for MrServer
 ## 📋 Installation
 
 ```bash
-npm install -g mrserver
+npm install -g misterserver
 ```
 
 ## 🛠️ Usage
