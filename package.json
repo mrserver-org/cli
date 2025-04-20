@@ -1,6 +1,6 @@
 {
    "name": "misterserver",
-   "version": "1.0.0",
+   "version": "1.0.0-newname",
    "description": "Maximize your server.",
    "main": "src/cli.js",
    "scripts": {
