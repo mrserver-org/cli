@@ -5,7 +5,7 @@ import { Stop } from './stop.js';
 import { Apps } from './apps.js';
 
 const program = new Command();
-const version = "main";
+const version = "v1.0.0";
 const repo = "https://raw.githubusercontent.com/mrserver-org/apps/refs/heads/main"; // todo: change this to a config file
 
 program

@@ -1,5 +1,8 @@
-# 🚀 MrServer CLI
-_Maximize your server._
+<div align="center">
+  <img height="150" src="https://raw.githubusercontent.com/mrserver-org/ui/refs/heads/main/logo.png">
+  <h1>MrServer CLI</h1>
+  <p><em>Maximize your server.</em></p>
+</div>
 
 A powerful Command Line Interface for MrServer
 
