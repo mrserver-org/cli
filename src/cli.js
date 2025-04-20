@@ -1,12 +1,14 @@
+#!/usr/bin/env node
 import { Command } from 'commander';
 import { Install }  from './install.js';
 import { Start } from './start.js';
 import { Stop } from './stop.js';
 import { Apps } from './apps.js';
+import config from './config.js';
 
 const program = new Command();
-const version = "v1.0.0";
-const repo = "https://raw.githubusercontent.com/mrserver-org/apps/refs/heads/main"; // todo: change this to a config file
+const version = config.version;
+const repo = config.repo;
 
 program
    .option("-i, --install", 'Installs/Updates MrServer into the machine')
