@@ -1,0 +1,22 @@
+{
+   "name": "mrserver",
+   "version": "1.0.0",
+   "description": "Maximize your server.",
+   "main": "src/cli.js",
+   "scripts": {
+      "cli": "node src/cli"
+   },
+   "bin": {
+      "mr": "./src/cli.js"
+   },
+   "keywords": [],
+   "author": "NEOAPPS",
+   "type": "module",
+   "license": "GPL-3.0",
+   "dependencies": {
+      "adm-zip": "^0.5.16",
+      "chalk": "^5.4.1",
+      "commander": "^13.1.0",
+      "node-fetch": "^3.3.2"
+   }
+}
