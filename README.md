@@ -37,6 +37,10 @@ mr -h, --help       📚 Displays this help information
 - **Simple Management**: Start, stop, and restart your MrServer with simple commands
 - **User-Friendly**: Clear visual indicators and helpful messages
 
+## 📃 Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for more information.
+
 ## 📄 License
 
 GPL-3.0
