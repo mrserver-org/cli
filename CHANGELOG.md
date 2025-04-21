@@ -7,3 +7,5 @@ v1.1.0
 - Improved CLI a little bit
 v1.1.1
 - Migrated from options to commands to fix all of the issues
+v1.1.2
+- Removed unnecessary options

@@ -12,15 +12,6 @@ const program = new Command();
 const version = config.version;
 const repo = config.repo;
 program
-  .option("-i, --install", "Installs/Updates MrServer into the machine")
-  .option("-s, --start", "Starts MrServer")
-  .option("-S, --stop", "Stops MrServer")
-  .option("-r, --restart", "Restarts MrServer")
-  .option(
-    "-a, --app-install <appId>",
-    "Installs an app from the MrServer Apps Repository",
-  )
-  .option("-u, --users", "Lists all users")
   .version(version, "-v, --version", "Get the current version of MrServer")
   .usage("[command]")
   .addHelpText(
