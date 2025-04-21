@@ -41,7 +41,7 @@ export const Apps = {
 
       if (entryName === "metadata.json") {
         metadata = JSON.parse(entry.getData().toString("utf8"));
-      } else if (entryName.startsWith("app/") && entryName.endsWith(".js")) {
+      } else if (entryName.startsWith("app/")) {
         const fileName = path.basename(entryName);
         const targetPath = path.join(appDir, fileName);
 

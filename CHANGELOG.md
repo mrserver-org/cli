@@ -28,3 +28,7 @@ v1.1.4
 
 - Fixed issues with older versions of the CLI.
 - Fixed the typo "third_party_apps" to "3rd_party_apps" (how did this even happen)
+
+v1.1.5
+
+- Added folders and non-js files support.
