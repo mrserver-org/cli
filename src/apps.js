@@ -28,7 +28,7 @@ export const Apps = {
     const zip = new AdmZip(zipPath);
     const zipEntries = zip.getEntries();
 
-    const appDir = path.join(mrserverDir, "ui", "apps");
+    const appDir = path.join(mrserverDir, "ui", "third_party_apps");
     const uiDir = path.join(mrserverDir, "ui");
 
     fs.mkdirSync(appDir, { recursive: true });
