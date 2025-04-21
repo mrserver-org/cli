@@ -6,7 +6,7 @@ export const Install = {
     console.log(`📦 [MrServer CLI] Installing MrServer Component "${name}"...`);
     return new Promise((resolve, reject) => {
       if (fs.existsSync(targetDir)) {
-        const command = `cd ${targetDir} && git pull`;
+        const command = `cd ${targetDir} && git pull ${repoUrl} ${branch}`;
         exec(command, (error, stdout, stderr) => {
           if (error) {
             reject(`Error updating repository: ${stderr}`);

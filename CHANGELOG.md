@@ -21,5 +21,10 @@ v1.1.2
 
 v1.1.3
 
-- Implemented "third_party_apps" instead of "apps" for better MrServer update capability.
+- Implemented "3rd_party_apps" instead of "apps" for better MrServer update capability.
 - Bumped MrServer version to v1.1.0
+
+v1.1.4
+
+- Fixed issues with older versions of the CLI.
+- Fixed the typo "third_party_apps" to "3rd_party_apps" (how did this even happen)
