@@ -21,14 +21,20 @@ MrServer CLI provides several commands to manage your MrServer instance:
 │                  🚀 MrServer CLI                    │
 └─────────────────────────────────────────────────────┘
 
-📋 Commands:
-───────────────────────────────────────────────────────
-mr -i, --install    📥 Installs/Updates MrServer
-mr -s, --start      ▶️  Starts MrServer
-mr -S, --stop       ⏹️  Stops MrServer
-mr -r, --restart    🔄 Restarts MrServer
-mr -v, --version    ℹ️  Shows current version
-mr -h, --help       📚 Displays this help information
+		📋 Commands:
+		───────────────────────────────────────────────────────
+        mr install           📥 Installs/Updates MrServer
+        mr start             ▶️ Starts MrServer
+        mr stop              ⏹️ Stops MrServer
+        mr restart           🔄 Restarts MrServer
+        mr app-install       📦 Installs an app from Apps repo.
+        mr users             👥 Lists all users
+        mr useradd           ➕ Adds a user
+        mr rmuser            ➖ Removes a user
+		mr roles             💻 List roles
+        mr -v, --version     ℹ️ Shows current version
+        mr -h, --help        📚 Displays this help information
+        ───────────────────────────────────────────────────────
 ```
 
 ## 📦 Features

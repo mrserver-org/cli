@@ -31,6 +31,7 @@ program
         mr users             👥 Lists all users
         mr useradd           ➕ Adds a user
         mr rmuser            ➖ Removes a user
+		mr roles             💻 List roles
         mr -v, --version     ℹ️ Shows current version
         mr -h, --help        📚 Displays this help information
         ───────────────────────────────────────────────────────
@@ -42,11 +43,11 @@ program
          ───────────────────────────────────────────────────────
          `,
   )
-  .command("useradd <username> <password>")
+  .command("useradd <username> <password> <role>")
   .description("Adds a new user")
-  .action((username, password) => {
+  .action((username, password, role) => {
     try {
-      Users.addUser(username, password);
+      Users.addUser(username, password, role);
       process.exit(0);
     } catch (err) {
       console.error("❌ [MrServer CLI] Failed to add user:", err);
@@ -142,6 +143,14 @@ program
         process.exit(1);
       }
     })();
+  });
+
+program
+  .command("roles")
+  .description("List the available roles.")
+  .action(() => {
+    console.log("📃 [MrServer CLI] Roles:");
+    console.log("- admin\n- user\n- guest");
   });
 
 program.parse(process.argv);

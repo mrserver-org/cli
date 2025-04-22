@@ -56,10 +56,10 @@ export const Users = {
     return crypto.createHash("sha256").update(password).digest("hex");
   },
 
-  addUser(username, password) {
+  addUser(username, password, role) {
     if (!username || !password) {
       console.error(
-        chalk.red("❌ [MrServer CLI] Username and password are required"),
+        chalk.red("❌ [MrServer CLI] Username, password and role are required"),
       );
       return false;
     }
@@ -76,6 +76,7 @@ export const Users = {
     users.push({
       username,
       password: this.hashPassword(password),
+      role: role,
     });
 
     if (this.saveUsers(users)) {

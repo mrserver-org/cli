@@ -32,3 +32,9 @@ v1.1.4
 v1.1.5
 
 - Added folders and non-js files support.
+
+v1.1.6
+
+- Updated MrServer to v1.2.0
+- Added role-based authentication.
+- Added `mr roles` to view available roles.
