@@ -38,3 +38,8 @@ v1.1.6
 - Updated MrServer to v1.2.0
 - Added role-based authentication.
 - Added `mr roles` to view available roles.
+
+v1.1.7
+ 
+- Bump
+
