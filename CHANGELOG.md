@@ -40,6 +40,10 @@ v1.1.6
 - Added `mr roles` to view available roles.
 
 v1.1.7
- 
+
 - Bump
 
+WIP
+
+- Preinstall Scripts! (beta, non-crossplatform yet)
+- Change repo using CLI. (config file coming soon)

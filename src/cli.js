@@ -10,7 +10,6 @@ import "./users.js";
 
 const program = new Command();
 const version = config.version;
-const repo = config.repo;
 program
   .version(version, "-v, --version", "Get the current version of MrServer")
   .usage("[command]")
@@ -54,6 +53,12 @@ program
       process.exit(1);
     }
   });
+
+program.option(
+  "-r, --repo <repo>",
+  "Specify the repository URL for app installation"
+);
+
 program
   .command("rmuser <username>")
   .description("Removes a new user")
@@ -66,6 +71,7 @@ program
       process.exit(1);
     }
   });
+
 program
   .command("users")
   .description("Lists all users")
@@ -132,14 +138,15 @@ program
   .command("app-install <appId>")
   .description("Installs an app from the MrServer Apps Repository")
   .action((appId) => {
+    let repo = program.opts().repo || config.repo;
     console.log(`📦 [MrServer CLI] Installing app: ${appId}`);
-    console.log(`🔗 Using repository: ${repo}`);
+    console.log(`🔗 [MrServer CLI] Using repository: ${repo}`);
     (async () => {
       try {
         await Apps.install(appId, repo);
         process.exit(0);
       } catch (err) {
-        console.error(`❌ [MrServer CLI] Failed to install app:`, err);
+        console.error(`❌ [MrServer CLI] ${err}`);
         process.exit(1);
       }
     })();
