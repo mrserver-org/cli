@@ -43,7 +43,7 @@ v1.1.7
 
 - Bump
 
-WIP
+v1.1.8
 
 - Preinstall Scripts! (beta, non-crossplatform yet)
 - Change repo using CLI. (config file coming soon)
